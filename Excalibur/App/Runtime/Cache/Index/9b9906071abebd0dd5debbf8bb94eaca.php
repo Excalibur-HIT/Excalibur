@@ -29,7 +29,10 @@
 <div class="container">
 
 
-<h2>您总共通话<span style="color:#f40;"><?php echo ($call); ?></span>分钟，使用<span style="color:#f40;"><?php echo ($ll); ?></span>M流量，发送了<span style="color:#f40;"><?php echo ($msg); ?></span>条短信</h2>
+<h2>您总共通话<span style="color:#f40;"><?php echo ($call); ?></span>分钟，使用<span style="color:#f40;">
+<?php echo ($ll); ?></span>M流量，发送了<span style="color:#f40;"><?php echo ($msg); ?></span>条短信<br>
+根据账单， 语音通话费用为<span style="color:#f40;"><?php echo ($call_cost); ?></span>元，短信费用为
+<span style="color:#f40;"><?php echo ($msg_cost); ?></span>元</h2>
 <br>
 <h2>套餐按价格排序如下：</h2>
 

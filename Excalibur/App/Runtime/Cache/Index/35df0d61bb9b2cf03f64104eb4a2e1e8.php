@@ -197,12 +197,12 @@
 			</div>
 		</div>
 
- <form class="form-signin" name="huafei" action="<?php echo U('index/index/chaxun');?>" method="post">
+ <form class="form-signin" name="huafei" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
         <h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;">输入目前的话费账单</h4>
           <div class="mb20">通话时长:&nbsp;&nbsp;<input type="text" class="form"  name="call"  ></div>
           <div class="mb20">流量使用:&nbsp;&nbsp;<input type="text" class="form" name="ll"></div>
           <div class="mb20">短信数量:&nbsp;&nbsp;<input type="text" class="form" name="msg"></div>
-         
+          <input  type="file" name="file_stu"  class="form"/>
           <div style="text-align:center;margin-top:20px;"><button class="btn" type="submit">查询最优套餐</button></div>
       </form>
 
@@ -210,14 +210,6 @@
 
 </div>
 
-
- 
-<form class="form-signin" action="<?php echo U('index/index/upload');?>" method="post" enctype="multipart/form-data"> 
-    <input type="file" name="photo"  class="form" /><br> 
-  <center>  <input type="submit" value="上传话费账单" class="btn" /> </center>
-</form>  
-
-  
 <!-- footer start -->
 <footer id="footer">
   <div class="col-lg-12 col-md-12">

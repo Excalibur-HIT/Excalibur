@@ -15,7 +15,10 @@ class IndexAction extends CommonAction
 		//显示模板	
 		$this->display('index');
 	}
+	
+
     Public function chaxun(){
+	
         $call=$_POST["call"];
         $ll=$_POST["ll"];
         $msg=$_POST["msg"];
@@ -39,33 +42,41 @@ class IndexAction extends CommonAction
         $this->assign('call',$call);
         $this->assign('ll',$ll);
         $this->assign('msg',$msg);
+		
+		//完成与thinkphp相关的，文件上传类的调用     
+            import('ORG.Util.ExcelToArrary');//导入excelToArray类
+		
+		$tmp_file = $_FILES ['file_stu'] ['tmp_name'];
+		$file_types = explode ( ".", $_FILES ['file_stu'] ['name'] );
+		$file_type = $file_types [count ( $file_types ) - 1];
+	
+		 /*判别是不是.xls文件，判别是不是excel文件*/
+		 if (strtolower ( $file_type ) != "xlsx" && strtolower ( $file_type ) != "xls")              
+		 {
+			  $this->error ( '不是Excel文件，重新上传' );
+		 }
+	
+		 /*设置上传路径*/
+		 $savePath = C('UPLOAD_DIR');
+	
+		 /*以时间来命名上传的文件*/
+		 $str = date ( 'Ymdhis' ); 
+		 $file_name = $str . "." . $file_type;
+		 
+		 /*是否上传成功*/
+		 if (! copy ( $tmp_file, $savePath . $file_name )) 
+		  {
+			  $this->error ( '上传失败' );
+		  }
+		$ExcelToArrary=new ExcelToArrary();//实例化
+		$res=$ExcelToArrary->read(C('UPLOAD_DIR').$file_name,"UTF-8",$file_type);//传参,判断office2007还是office2003
+        //dump($res);//显示结果 
+		
+		$this->assign('call_cost',$res[9][1]);
+		$this->assign('msg_cost',$res[13][1]);
 		//显示模板	
 		$this->display('less');
 	}
 	
-	  function upload(){  
-        //完成与thinkphp相关的，文件上传类的调用     
-        import('@.Org.UploadFile');//将上传类UploadFile.class.php拷到Lib/Org文件夹下  
-        $upload=new UploadFile();  
-        $upload->maxSize='1000000';//默认为-1，不限制上传大小  
-        $upload->savePath='./Uploads/';//保存路径建议与主文件平级目录或者平级目录的子目录来保存     
-        $upload->saveRule=uniqid;//上传文件的文件名保存规则  
-        $upload->uploadReplace=true;//如果存在同名文件是否进行覆盖  
-        $upload->allowExts=array('jpg','jpeg','png','gif','xls','doc','txt');//准许上传的文件类型  
-       // $upload->allowTypes=array('image/png','image/jpg','image/jpeg','image/gif');//检测mime类型  
-       // $upload->thumb=true;//是否开启图片文件缩略图  
-       // $upload->thumbMaxWidth='300,500';  
-       // $upload->thumbMaxHeight='200,400';  
-       // $upload->thumbPrefix='s_,m_';//缩略图文件前缀  b 
-      //  $upload->thumbRemoveOrigin=1;//如果生成缩略图，是否删除原图  
-         
-        if($upload->upload()){  
-            //$info=$upload->getUploadFileInfo();  
-            //return $info;  
-			$this->success('上传成功'); 
-        }else{  
-            $this->error($upload->getErrorMsg());//专门用来获取上传的错误信息的     
-        }     
-    }  
 	
 }

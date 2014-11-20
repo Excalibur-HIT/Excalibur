@@ -1,0 +1,996 @@
+[ 2014-11-20T13:52:40+08:00 ] 0.0.0.0 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034034s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.018159s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.011087s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.066732s ]
+SQL: SELECT * FROM `dh_huafei` WHERE ( yys='移动' ) ORDER BY id desc  [ RunTime:0.003411s ]
+SQL: SELECT * FROM `dh_huafei` WHERE ( yys='联通' ) ORDER BY id desc  [ RunTime:0.000392s ]
+SQL: SELECT * FROM `dh_huafei` WHERE ( yys='电信' ) ORDER BY id desc  [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\35df0d61bb9b2cf03f64104eb4a2e1e8.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.108974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109153s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.012620s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000884s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000524s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015393s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001197s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001287s ]
+
+[ 2014-11-20T13:53:39+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.031514s ]
+INFO: [ route_check ] --END-- [ RunTime:0.031699s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.001891s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000300s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002067s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012567s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000423s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000393s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000282s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2014-11-20T13:54:31+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.001807s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000306s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002151s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012238s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000808s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000738s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000619s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003217s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000915s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-11-20T13:59:41+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001043s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002496s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000510s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002952s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014348s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000862s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000697s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000572s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003168s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000845s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2014-11-20T14:08:32+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001034s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002450s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000585s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003024s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017816s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000664s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000615s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002789s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000755s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2014-11-20T14:09:07+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002613s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000479s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003500s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000567s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017941s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001011s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001101s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000836s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004384s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001339s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001487s ]
+
+[ 2014-11-20T14:09:19+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000802s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002229s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000382s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003372s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000676s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016687s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000875s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000899s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000792s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003921s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001123s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2014-11-20T14:10:38+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002509s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000388s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002971s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000746s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017467s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001026s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000962s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000815s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004257s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001754s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001876s ]
+
+[ 2014-11-20T14:11:04+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001347s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002708s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000426s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003140s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018499s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000939s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000952s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000901s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004262s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2014-11-20T14:11:35+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001361s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002333s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000496s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002743s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+
+[ 2014-11-20T14:11:44+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001239s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002456s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000430s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003102s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000642s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017937s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001250s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000960s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001061s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004889s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001268s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001418s ]
+
+[ 2014-11-20T14:15:49+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001068s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+
+[ 2014-11-20T14:16:21+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000841s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+
+[ 2014-11-20T14:16:46+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+
+[ 2014-11-20T14:16:57+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000912s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002469s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000590s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003248s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022403s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000829s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000696s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000560s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003631s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000920s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2014-11-20T14:17:20+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001018s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002738s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000429s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003602s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018265s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001067s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001238s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000733s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004665s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001469s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001662s ]
+
+[ 2014-11-20T14:19:00+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001004s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002293s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000421s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003194s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000671s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017969s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001275s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001136s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000844s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004677s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001375s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001497s ]
+
+[ 2014-11-20T14:21:05+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002365s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000531s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003208s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016592s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001267s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000942s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004239s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001195s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2014-11-20T14:33:03+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002242s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000389s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002904s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000561s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018757s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001020s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001029s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004454s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001324s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2014-11-20T14:34:00+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001037s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002979s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000465s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003208s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000657s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017641s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001025s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000897s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000759s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004028s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001782s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001942s ]
+
+[ 2014-11-20T14:34:13+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001014s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002894s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000401s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003072s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000523s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017497s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001428s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001070s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000747s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004707s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001111s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2014-11-20T14:34:44+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001078s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002676s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000476s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003121s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018458s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001086s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000956s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004205s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001466s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001607s ]
+
+[ 2014-11-20T14:35:27+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001155s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002388s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000418s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002838s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000556s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000968s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001076s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000900s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004415s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001272s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2014-11-20T14:35:42+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002504s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000403s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003035s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000665s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018440s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001214s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000967s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000815s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004441s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001341s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001466s ]
+
+[ 2014-11-20T14:36:02+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001076s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002729s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000458s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003158s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019811s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000901s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000907s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001144s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004549s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001132s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2014-11-20T14:36:35+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001048s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002757s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000390s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002816s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014548s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001025s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000751s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004520s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001472s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001621s ]
+
+[ 2014-11-20T14:37:30+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001079s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002615s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000431s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003536s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016516s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000966s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000921s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000756s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004023s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001126s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2014-11-20T14:40:29+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001136s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002373s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000413s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003546s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018360s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001073s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000945s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004527s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001183s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2014-11-20T14:40:53+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001090s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002571s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000427s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002866s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000834s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018380s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001038s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001232s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000796s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004795s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001258s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2014-11-20T14:41:06+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001279s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002638s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000360s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003087s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000716s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016485s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000872s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000982s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000746s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003944s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001098s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2014-11-20T14:41:44+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001558s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001734s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002550s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000399s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.003020s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000584s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018431s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000986s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000963s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004275s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001186s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2014-11-20T14:42:07+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001073s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002581s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000437s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002899s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017344s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000984s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001186s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004907s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001159s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2014-11-20T14:42:20+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000799s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.001964s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000286s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002713s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012852s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000649s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000584s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002686s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000730s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2014-11-20T14:42:25+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000742s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002029s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000311s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002432s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011975s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000645s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000611s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002728s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000790s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2014-11-20T14:45:15+08:00 ] 0.0.0.0 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.001903s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000436s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002243s ]
+SQL: SELECT * FROM `dh_huafei` WHERE ( yys='移动' ) ORDER BY id desc  [ RunTime:0.000430s ]
+SQL: SELECT * FROM `dh_huafei` WHERE ( yys='联通' ) ORDER BY id desc  [ RunTime:0.000329s ]
+SQL: SELECT * FROM `dh_huafei` WHERE ( yys='电信' ) ORDER BY id desc  [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\35df0d61bb9b2cf03f64104eb4a2e1e8.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015854s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000442s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001963s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000558s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2014-11-20T14:45:22+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000653s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.002005s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000306s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002355s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000403s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013187s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001002s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000866s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000719s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003801s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2014-11-20T14:49:01+08:00 ] 0.0.0.0 /index.php/index/index/chaxun.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000740s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `dh_category` [ RunTime:0.001959s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dh_category`
+SQL: SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5   [ RunTime:0.000315s ]
+ERR: 1146:Table 'dianhua.dh_category' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `dh_category` WHERE ( isverify=1 and isshow=1 ) LIMIT 5  
+SQL: SHOW COLUMNS FROM `dh_huafei` [ RunTime:0.002417s ]
+SQL: SELECT * FROM `dh_huafei` ORDER BY id desc  [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username E:\Program Files\wamp\www\App\Runtime\Cache\Index\9b9906071abebd0dd5debbf8bb94eaca.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012686s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000670s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000592s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000507s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002686s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000753s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000842s ]
+

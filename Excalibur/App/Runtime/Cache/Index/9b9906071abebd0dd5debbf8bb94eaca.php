@@ -31,8 +31,14 @@
 
 <h2>您总共通话<span style="color:#f40;"><?php echo ($call); ?></span>分钟，使用<span style="color:#f40;">
 <?php echo ($ll); ?></span>M流量，发送了<span style="color:#f40;"><?php echo ($msg); ?></span>条短信<br>
-根据账单， 语音通话费用为<span style="color:#f40;"><?php echo ($call_cost); ?></span>元，短信费用为
-<span style="color:#f40;"><?php echo ($msg_cost); ?></span>元</h2>
+账单详情：月租费用为<span style="color:#f40;"><?php echo ($base_cost); ?></span>元， 语音通话
+费用为<span style="color:#f40;"><?php echo ($call_cost); ?></span>元，短信费用为
+<span style="color:#f40;"><?php echo ($msg_cost); ?></span>元<br>
+账单分析：总费用中，月租占<span style="color:#f40;"><?php echo ($base_percent); ?></span>%,
+通话费用占<span style="color:#f40;"><?php echo ($call_percent); ?></span>%，短信费用占
+<span style="color:#f40;"><?php echo ($msg_percent); ?></span>元<br>
+增值部分：您选择的流量包为<span style="color:#f40;"><?php echo ($llb); ?></span>元包,
+短信包为<span style="color:#f40;"><?php echo ($dxb); ?></span>元包</h2>
 <br>
 <h2>套餐按价格排序如下：</h2>
 

@@ -202,7 +202,22 @@
           <div class="mb20">通话时长:&nbsp;&nbsp;<input type="text" class="form"  name="call"  ></div>
           <div class="mb20">流量使用:&nbsp;&nbsp;<input type="text" class="form" name="ll"></div>
           <div class="mb20">短信数量:&nbsp;&nbsp;<input type="text" class="form" name="msg"></div>
-          <input  type="file" name="file_stu"  class="form"/>
+		 流量包:&nbsp;&nbsp;&nbsp;&nbsp;<select name="llb">
+			<option value="0">不订购</option>
+			<option value="10">10元包100M</option>
+			<option value="20">20元包300M</option>
+			<option value="30">30元包500M</option>
+			<option value="50">50元包1G</option>
+			<option value="100">100元包2.5G</option>
+		</select><br><br>
+		 短信包:&nbsp;&nbsp;&nbsp;&nbsp;<select name="dxb">
+			<option value="0">不订购</option>
+			<option value="5">5元包60条</option>
+			<option value="10">10元包125条</option>
+			<option value="20">20元包300条</option>
+		</select><br><br>
+		
+		<input  type="file" name="file_stu"  class="form"/>
           <div style="text-align:center;margin-top:20px;"><button class="btn" type="submit">查询最优套餐</button></div>
       </form>
 

@@ -16,10 +16,16 @@
 <link href="/Css/style.css" rel="stylesheet" type="text/css">	
 <script src="/Js/jquery.js"></script>
 <script src="/Js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 
 <style type="text/css">
 </style>
 </head><body class="templatemo-bg-image-2">
+=======
+<style type="text/css">
+</style>
+</head><body style="background-color:#ffffff;" id="body" >
+>>>>>>> origin/N2
 <header> 
   <!-- 导航开始 -->
  	<include file="Public:header" />
@@ -202,6 +208,7 @@
 			</div>
 		</div>
 
+<<<<<<< HEAD
 
 <DIV id=demo  style="OVERFLOW: hidden; WIDTH: 1150px; HEIGHT: 200px; top:485px; left:252px;">
    <table border="0" cellspacing="0" cellpadding="0">
@@ -237,6 +244,110 @@
                   </td>
                </tr>
             </table>
+=======
+
+<DIV id=demo  style="OVERFLOW: hidden; WIDTH: 1150px; HEIGHT: 200px; top:485px; left:252px;">
+   <table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+         <td valign="top"  id=demo1>
+
+            <!-- 要循环滚动的图片 -->
+            <table width="1150" border="0" align="center" cellpadding="0" cellspacing="0" >
+               <tr>
+                  <td width="300" align="center" style="height: 200px">
+                      <a href="http://mrp.weibo.10086.cn/marketPlat/caiyunturntable/index.jsp?tl=1010&tid=90000" target="_blank">
+                     <img src="/img/act1.jpg" width="194" height="147" border="0" /></a>
+                  </td>
+                  <td width="300" align="center" style="height: 200px">
+                      <a href="http://shop.10086.cn/goods/451_451_1015157_1010501.html" target="_blank">
+                     <img src="/img/act2.jpg" width="194" height="147" border="0" /></a>
+                  </td>
+                  <td align="center" style="height: 200px; width: 300px;">
+                      <a href="http://www.hl.10086.cn/resources/xuanchuan/zhc/sjjhym.jsp" target="_blank">
+                     <img src="/img/act3.jpg" width="194" height="147" border="0" /></a>
+                  </td>
+				   <td width="300" align="center" style="height: 200px">
+                      <a href="http://www.hl.10086.cn/seckill/mall/pjyl/index.jsp" target="_blank">
+                     <img src="/img/act4.jpg" width="194" height="147" border="0" /></a>
+                  </td>
+				   <td width="300" align="center" style="height: 200px">
+                      <a href="http://www.hl.10086.cn/seckill/mall/zhc/index.html" target="_blank">
+                     <img src="/img/act5.jpg" width="194" height="147" border="0" /></a>
+                  </td>
+				   <td width="300" align="center" style="height: 200px">
+                      <a href="http://www.10086.cn/10085/meizu/" target="_blank">
+                     <img src="/img/act6.jpg" width="194" height="147" border="0" /></a>
+                  </td>
+               </tr>
+            </table>
+
+         </td>
+         <TD id=demo2 width=1></TD>
+      </tr>
+   </table>
+</DIV> 
+<SCRIPT>
+   var speed=30//速度数值越大速度越慢
+   var demo2 = document.getElementById("demo2");
+   var demo = document.getElementById("demo");
+   var demo1 = document.getElementById("demo1");
+   demo2.innerHTML=demo1.innerHTML
+   function Marquee(){
+      if(demo2.offsetWidth-demo.scrollLeft<=0)
+         demo.scrollLeft-=demo1.offsetWidth
+      else{
+         demo.scrollLeft++
+      }
+   }
+   var MyMar=setInterval(Marquee,speed)
+   demo.onmouseover=function() {clearInterval(MyMar)}
+   demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+</SCRIPT>
+
+
+<table style="background-color:#ffff99; width=1200px; border=0;">
+<tr >
+<td style="width:300px;text-align:top;">
+<form class="form-signin" name="huafei" action="<{:U('index/index/chaxun')}>" method="post" enctype="multipart/form-data">
+</td>
+<td style="width:500px;text-align:top;">
+<form class="form-signin" name="huafei" action="<{:U('index/index/chaxun')}>" method="post" enctype="multipart/form-data">
+        <p  class="mb20"style="font-family:'微软雅黑';font-size:20px;">通过输入话费信息查询</p>
+          <div class="mb20">通话时长:&nbsp;&nbsp;<input type="text" class="form"  name="call"  ></div>
+          <div class="mb20">流量使用:&nbsp;&nbsp;<input type="text" class="form" name="ll"></div>
+          <div class="mb20">短信数量:&nbsp;&nbsp;<input type="text" class="form" name="msg"></div>
+		 流量包:&nbsp;&nbsp;&nbsp;&nbsp;<select name="llb">
+			<option value="0">不订购</option>
+			<option value="10">10元包100M</option>
+			<option value="20">20元包300M</option>
+			<option value="30">30元包500M</option>
+			<option value="50">50元包1G</option>
+			<option value="100">100元包2.5G</option>
+		</select><br><br>
+		 短信包:&nbsp;&nbsp;&nbsp;&nbsp;<select name="dxb">
+			<option value="0">不订购</option>
+			<option value="5">5元包60条</option>
+			<option value="10">10元包125条</option>
+			<option value="20">20元包300条</option>
+		</select><br><br>
+		<button class="btn" type="submit">查询最优套餐</button>
+</td>
+<td style="height:400px;width:400px;text-align:top;">
+<form class="form-signin" name="huafei" action="<{:U('index/index/chaxun')}>" method="post" enctype="multipart/form-data">
+	<p  class="mb20"style="font-family:'微软雅黑';font-size:20px;">通过提交账单表格查询</p>
+	<a href="http://www.10086.cn/" target="_blank">移动营业厅直通车</a><br>
+	<a href="http://www.10010.com/" target="_blank">联通营业厅直通车</a><br>
+	<a href="http://www.189.cn/" target="_blank">电信营业厅直通车</a><br><br>
+	<div class="mb20" style="text-align:center;"><input  type="file" name="file_stu"  class="form"/></div>
+	<button class="btn" type="submit">查询最优套餐</button>
+</tr>
+
+<tr>
+</table>
+
+
+
+>>>>>>> origin/N2
 
          </td>
          <TD id=demo2 width=1></TD>

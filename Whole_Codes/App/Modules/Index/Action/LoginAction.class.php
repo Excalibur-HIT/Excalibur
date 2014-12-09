@@ -22,9 +22,9 @@ class LoginAction extends Action{
 		$this->display('login');
 	}
 	public function checkLogin(){
-		if($_SESSION["verify"]!=md5($_POST['code'])){
+		/* if($_SESSION["verify"]!=md5($_POST['code'])){
 			$this->error("验证码错误");
-		}
+		} */
 		$User = M("Member_user"); 
 		if (!$User->create()){
 			 $this->error(($User->getError()));
@@ -50,9 +50,9 @@ public function checkreg(){
 		$this->display('checkreg');
 }
 public function checkregs(){
-	if($_SESSION["verify"]!=md5($_POST['code'])){
-			$this->error("验证码错误");
-		}
+	 if($_POST['code']!='hg093850'){
+			$this->error("Identifying Code错误,无注册权限");
+		} 
 		$User = D("Member_user"); 
 		$result=$User->create();
 		if (!$result){

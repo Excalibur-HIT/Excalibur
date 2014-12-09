@@ -12,9 +12,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/Css/bootstrap.css" rel="stylesheet">
-
+	<link href="/Css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="/Css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="/Css/templatemo_style.css" rel="stylesheet" type="text/css">	
+	<link href="/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="/Css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="/Css/bootstrap-social.css" rel="stylesheet" type="text/css">	
     <!-- Custom styles for this template -->
-    <link href="/Css/style.css" rel="stylesheet">
 	<script src="/Js/jquery.js"></script>
    <script>
 function fleshVerify(type){ 
@@ -31,23 +35,58 @@ function fleshVerify(type){
 
   </head>
 
-  <body>
-
-    <div class="container">
-
-      <form class="form-signin" role="form" action="<?php echo U('Login/checkLogin');?>" method="post">
-        <h4 class="form-signin-heading" style="font-family:'微软雅黑';font-size:20px;">账号登陆:</h4>
-         <input type="text" class="form  mb20"  name="username" placeholder="账号(必填)" required>
-          <input type="password" class="form  mb20" name="password" placeholder="密码(必填)" required>
-          <input type="text" class="form  mb20" name="code" placeholder="验证码(必填)" required width="40"
-          style="width:200px;display:inline;valign:center;">
-          <img id="verifyImg" SRC="__URL__/verify/" onClick="fleshVerify()" border="0" alt="点击刷新验证码" style="cursor:pointer;width:80px;vertical-align:top;" align="absmiddle">
-          
-		   <div style="width:50%;"><a href="<?php echo U('Index/Login/index');?>"  style="float:right" title="注册">已有账号</a><a href="<?php echo U('Index/Index/index');?>"style="float:right; margin-right:20px;" title="返回">返回首页</a></div>
-		   <div style="clear:both;" class="mb20"></div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
-      </form>
-
-    </div>
-  </body>
+  <body class="templatemo-bg-image-2">
+	<div class="container">
+		<div class="col-md-12">			
+			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('Login/checkLogin');?>" method="post">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Manager Login</h1>
+					</div>
+				</div>
+				<div class="form-inner">		
+			        <div class="form-group">
+			          <div class="col-md-12">		          	
+			            <label for="username" class="control-label">Username</label>
+						<div class="templatemo-input-icon-container">
+				            <i class="fa fa-user"></i>
+				            <input type="text" class="form-control" name="username" placeholder="" required>
+				        </div>
+						           		            		            
+			          </div>      
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-12">
+			            <label for="password" class="control-label">Password</label>
+						<div class="templatemo-input-icon-container">
+				            <i class="fa fa-lock"></i>
+							<input type="password" class="form-control" name="password" placeholder="" required>
+						</div>
+			          </div>
+			        </div>
+					<br/>
+					<div class="form-group">
+				          <div class="col-md-12">
+				            <input type="submit" value="LOG IN" class="btn btn-info">
+				          </div>
+				    </div>
+					<div class="form-group">
+			          <div class="col-md-12">
+			            <a href="href="<?php echo U('/index/login');?>"" class="pull-left">Home</a>
+			          </div>
+			        </div>
+					<!-- 验证码保留部分
+					<div class="form-group">
+			          <div class="col-md-6">
+						<label for="password" class="control-label">Identifying Code</label>
+			            <input type="text" class="form-control" name="code" placeholder="" />
+						<img id="verifyImg" SRC="<?php echo U('Login/verify');?>" onClick="fleshVerify(this)" border="0" alt="点击刷新验证码" style="cursor:pointer;width:80px;vertical-align:top;" align="absmiddle">
+			          </div>
+			        </div>
+					-->				
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
 </html>

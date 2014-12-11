@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-cn">
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title><{:R('Siteinfo/info',array('title'),'Widget')}>登陆</title>
+    <title><?php echo R('Siteinfo/info',array('title'),'Widget');?>登陆</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/Css/bootstrap.css" rel="stylesheet">
@@ -38,7 +38,7 @@ function fleshVerify(type){
   <body class="templatemo-bg-image-2">
 	<div class="container">
 		<div class="col-md-12">			
-			<form class="form-horizontal templatemo-login-form-2" role="form" action="<{:U('Login/checkLogin')}>" method="post">
+			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('Login/checkLogin');?>" method="post">
 				<div class="row">
 					<div class="col-md-12">
 						<h1 style="font-family:'';">管理员登陆</h1>
@@ -72,7 +72,7 @@ function fleshVerify(type){
 				    </div>
 					<div class="form-group">
 			          <div class="col-md-12">
-			            <a href="href="<{:U('/index/login')}>"" class="pull-left">Home</a>
+			            <a href="href="<?php echo U('/index/login');?>"" class="pull-left">Home</a>
 			          </div>
 			        </div>
 					<!-- 验证码保留部分
@@ -80,7 +80,7 @@ function fleshVerify(type){
 			          <div class="col-md-6">
 						<label for="password" class="control-label">Identifying Code</label>
 			            <input type="text" class="form-control" name="code" placeholder="" />
-						<img id="verifyImg" SRC="<{:U('Login/verify')}>" onClick="fleshVerify(this)" border="0" alt="点击刷新验证码" style="cursor:pointer;width:80px;vertical-align:top;" align="absmiddle">
+						<img id="verifyImg" SRC="<?php echo U('Login/verify');?>" onClick="fleshVerify(this)" border="0" alt="点击刷新验证码" style="cursor:pointer;width:80px;vertical-align:top;" align="absmiddle">
 			          </div>
 			        </div>
 					-->				

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <base href="__ROOT__/" />
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -20,14 +20,14 @@
 <div class="container">
 	<div class="container">
 		<div class="col-md-12">			
-			<form class="form-horizontal templatemo-login-form-2" role="form" action="<{:U('index/index/chaxun')}>" method="post" enctype="multipart/form-data">
+			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-md-12">
 						<h1><span style="color:#ffffff;font-family:'黑体';">您的话费分析如下</span></h1>
 					</div>
 				</div>
 				<div class="row">
-					<h2><span style="color:#ffffff;">您总共通话<span style="color:#f40;"><{$call}></span><span style="color:#ffffff;">分钟，使用<span style="color:#f40;"><{$ll}></span><span style="color:#ffffff;">M流量，发送了<span style="color:#f40;"><{$msg}></span><span style="color:#ffffff;">条短信<br></h2>
+					<h2><span style="color:#ffffff;">您总共通话<span style="color:#f40;"><?php echo ($call); ?></span><span style="color:#ffffff;">分钟，使用<span style="color:#f40;"><?php echo ($ll); ?></span><span style="color:#ffffff;">M流量，发送了<span style="color:#f40;"><?php echo ($msg); ?></span><span style="color:#ffffff;">条短信<br></h2>
 					<br/>
 					<h2><span style="color:#ffffff;">套餐按价格排序如下：</h2>
 					<div class="col-md-12">
@@ -58,17 +58,15 @@
 											</tr>
 										</thead>
 										<tbody>
-											<volist name="class1" id="li">
-												<tr >
+											<?php if(is_array($class1)): $i = 0; $__LIST__ = $class1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><tr >
 													<td>中国移动</td>
-													<td><{$li.package}></td>
-													<td><{$li.money}>元</td>
-													<td><{$li.llpackage}>M&nbsp;|&nbsp;超出部分<{$li.llmore}>元/M</td>
-													<td><{$li.callpackage}>分钟&nbsp;|&nbsp;超出部分<{$li.callmore}>元/分钟</td>
-													<td><{$li.msgpackage}>条&nbsp;|&nbsp;超出部分<{$li.msgmore}>元/条</td>
-													<td><span style="color:#f40;"><{$li.money2}></span>元</td>
-												</tr>
-											</volist>
+													<td><?php echo ($li["package"]); ?></td>
+													<td><?php echo ($li["money"]); ?>元</td>
+													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
+													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
+													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
+													<td><span style="color:#f40;"><?php echo ($li["money2"]); ?></span>元</td>
+												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>
 								</div>
@@ -86,17 +84,15 @@
 											</tr>
 										</thead>
 										<tbody>
-											<volist name="class2" id="li">
-												<tr >
+											<?php if(is_array($class2)): $i = 0; $__LIST__ = $class2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><tr >
 													<td>中国联通</td>
-													<td><{$li.package}></td>
-													<td><{$li.money}>元</td>
-													<td><{$li.llpackage}>M&nbsp;|&nbsp;超出部分<{$li.llmore}>元/M</td>
-													<td><{$li.callpackage}>分钟&nbsp;|&nbsp;超出部分<{$li.callmore}>元/分钟</td>
-													<td><{$li.msgpackage}>条&nbsp;|&nbsp;超出部分<{$li.msgmore}>元/条</td>
-													<td><span style="color:#f40;"><{$li.money5}></span>元</td>
-												</tr>
-											</volist>
+													<td><?php echo ($li["package"]); ?></td>
+													<td><?php echo ($li["money"]); ?>元</td>
+													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
+													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
+													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
+													<td><span style="color:#f40;"><?php echo ($li["money5"]); ?></span>元</td>
+												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>
 								</div>
@@ -114,17 +110,15 @@
 											</tr>
 										</thead>
 										<tbody>
-											<volist name="class3" id="li">
-												<tr >
+											<?php if(is_array($class3)): $i = 0; $__LIST__ = $class3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><tr >
 													<td>中国电信</td>
-													<td><{$li.package}></td>
-													<td><{$li.money}>元</td>
-													<td><{$li.llpackage}>M&nbsp;|&nbsp;超出部分<{$li.llmore}>元/M</td>
-													<td><{$li.callpackage}>分钟&nbsp;|&nbsp;超出部分<{$li.callmore}>元/分钟</td>
-													<td><{$li.msgpackage}>条&nbsp;|&nbsp;超出部分<{$li.msgmore}>元/条</td>
-													<td><span style="color:#f40;"><{$li.money4}></span>元</td>
-												</tr>
-											</volist>
+													<td><?php echo ($li["package"]); ?></td>
+													<td><?php echo ($li["money"]); ?>元</td>
+													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
+													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
+													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
+													<td><span style="color:#f40;"><?php echo ($li["money4"]); ?></span>元</td>
+												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>
 								</div>

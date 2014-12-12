@@ -419,9 +419,11 @@
 							<option value="10">10元包125条</option>
 							<option value="20">20元包300条</option>
 						</select><br><br>
+						<button class="btn btn-info" type="submit">输入查询最优套餐</button>
 					</div>
+					</form>	
 					
-					
+				<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun2');?>" method="post" enctype="multipart/form-data">	
 					<div class="templatemo-other-signin col-md-6">
 						<p  class="mb20"style="font-family:'微软雅黑';font-size:20px;">通过提交账单表格查询</p>
 						<a href="http://www.10086.cn/" target="_blank">移动营业厅直通车</a><br>
@@ -431,7 +433,7 @@
 					</div>   
 				</div>	
 				<br/>
-				<button class="btn btn-info" type="submit">查询最优套餐</button>
+				<button class="btn btn-info" type="submit">账单查询最优套餐</button>
 		      </form>		      		      
 		</div>
 	</div>

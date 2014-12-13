@@ -6,30 +6,27 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
 <title>三网通最优套餐系统</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<link href="/Css/style.css" rel="stylesheet" media="screen">
+<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+<link href="/Css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/Css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="/Css/templatemo_style.css" rel="stylesheet" type="text/css">	
+<link href="/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/Css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="/Css/bootstrap-social.css" rel="stylesheet" type="text/css">	
 <script src="/Js/jquery.js"></script>
 <script src="/Js/bootstrap.min.js"></script>
-</head><body id="body" >
-<header> 
-  <!-- 导航开始 -->
- 	<div class="nav">
-<h1><a href="/">三网通最优套餐</a></h1>
 
-<?php if($_SESSION[C('USER_AUTH_KEY_F')] == ''): ?><a href="/index.php/index/login/checkreg">管理员注册</a> <a href="/index.php/index/login">管理员登陆</a>
-<?php else: ?>
-<span class="navspan">hello,<?php echo $_SESSION[C('USER_AUTH_KEY_F')];?></span><span class="navspan"><a href="/index.php/member">管理已有套餐</a></span> <span class="navspan"><a href="/index.php/index/login/doLogout">退出登录</a></span><?php endif; ?>
-
-</div>
-<div class="logo">
-<img src="/img/logo.jpg">
-</div>
-  <!-- 导航结束 --> 
-</header>
-<div class="container">
+<style type="text/css">
+</style>
+</head><body class="templatemo-bg-image-2">
 
 
-		<div class="span12">
+	<div class="container">
+		<div class="col-md-12">			
+			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
+				<div class="row">
+		<div class="col-md-12">
+			<div class="tabbable" id="tabs-462262">
 			<div class="tabbable" id="tabs-462262">
 				<ul class="nav nav-tabs">
 					<li class="active">
@@ -67,7 +64,7 @@
 					</tr>
 				</thead>
 				<tbody>
-				<?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><tr class="success">
+				<?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><tr >
 						<td>
 							<?php echo ($li["yys"]); ?>
 						</td>
@@ -98,8 +95,10 @@
 				</div>
 			</div>
 		</div>
-
- <form class="form-signin" name="huafei" action="<?php echo U('member/person/addtc');?>" method="post" style="max-width: 450px;">
+				<br/>
+				
+				
+		<form class="form-signin" name="huafei" action="<?php echo U('member/person/addtc');?>" method="post" style="max-width: 450px;">
         <h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;">添加套餐</h4>
 		  <div class="mb20">运&nbsp;&nbsp;营&nbsp;&nbsp;商:&nbsp;&nbsp;<select name="yys">
         		<option value="移动">移动</option>
@@ -118,14 +117,12 @@
 
 
           <div style="text-align:center;margin-top:20px;"><button class="btn" type="submit">添加套餐</button></div>
-      </form>
+      </form>	      		      
+		</div>
+	</div>
 
-
-
-</div>
 
 <!-- footer start -->
-
 <!-- footer end -->
 <!-- 去顶部 --> 
 </body>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <base href="__ROOT__/" />
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -21,7 +21,7 @@
 
 	<div class="container">
 		<div class="col-md-12">			
-			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
+			<form class="form-horizontal templatemo-login-form-2" role="form" action="<{:U('index/index/chaxun')}>" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-md-12">
 						<h1>您的话费分析如下</h1>
@@ -31,15 +31,15 @@
 				<div class="row">
 					<div class="templatemo-one-signin col-md-6">
 						<div class="templatemo-input-icon-container">
-				            您总共通话<span style="color:#f40;"><?php echo ($call); ?></span>分钟
+				            您总共通话<span style="color:#f40;"><{$call}></span>分钟
 						</div>
 						<br/>
 						<div class="templatemo-input-icon-container">
-				            使用<span style="color:#f40;"><?php echo ($ll); ?></span>M流量
+				            使用<span style="color:#f40;"><{$ll}></span>M流量
 						</div>
 						<br/>
 						<div class="templatemo-input-icon-container">
-				            发送了<span style="color:#f40;"><?php echo ($msg); ?></span>条短信
+				            发送了<span style="color:#f40;"><{$msg}></span>条短信
 						</div>
 						
 					</div>
@@ -47,15 +47,15 @@
 					
 					<div class="templatemo-one-signin col-md-6">
 						<div class="templatemo-input-icon-container">
-				            您总共通话<span style="color:#f40;"><?php echo ($call); ?></span>分钟
+				            您总共通话<span style="color:#f40;"><{$call}></span>分钟
 						</div>
 						<br/>
 						<div class="templatemo-input-icon-container">
-				            使用<span style="color:#f40;"><?php echo ($ll); ?></span>M流量
+				            使用<span style="color:#f40;"><{$ll}></span>M流量
 						</div>
 						<br/>
 						<div class="templatemo-input-icon-container">
-				            发送了<span style="color:#f40;"><?php echo ($msg); ?></span>条短信
+				            发送了<span style="color:#f40;"><{$msg}></span>条短信
 						</div>
 						
 					</div>   
@@ -64,12 +64,12 @@
 		</div>
 	</div>
 <h2>
-账单详情：月租费用为<span style="color:#f40;"><?php echo ($base_cost); ?></span>元， 语音通话
-费用为<span style="color:#f40;"><?php echo ($call_cost); ?></span>元，短信费用为
-<span style="color:#f40;"><?php echo ($msg_cost); ?></span>元<br>
-账单分析：总费用中，月租占<span style="color:#f40;"><?php echo ($base_percent); ?></span>%,
-通话费用占<span style="color:#f40;"><?php echo ($call_percent); ?></span>%，短信费用占
-<span style="color:#f40;"><?php echo ($msg_percent); ?></span>元<br></h2>
+账单详情：月租费用为<span style="color:#f40;"><{$base_cost}></span>元， 语音通话
+费用为<span style="color:#f40;"><{$call_cost}></span>元，短信费用为
+<span style="color:#f40;"><{$msg_cost}></span>元<br>
+账单分析：总费用中，月租占<span style="color:#f40;"><{$base_percent}></span>%,
+通话费用占<span style="color:#f40;"><{$call_percent}></span>%，短信费用占
+<span style="color:#f40;"><{$msg_percent}></span>元<br></h2>
 <br>
 <h2>套餐按价格排序如下：</h2>
 
@@ -104,29 +104,31 @@
 					</tr>
 				</thead>
 				<tbody>
-				<?php if(is_array($class1)): $i = 0; $__LIST__ = $class1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><tr class="success">
+				<volist name="class1" id="li">
+					<tr class="success">
 						<td>
-							<?php echo ($li["yys"]); ?>
+							<{$li.yys}>
 						</td>
 						<td>
-							<?php echo ($li["package"]); ?>
+							<{$li.package}>
 						</td>
 						<td>
-							<?php echo ($li["money"]); ?>元
+							<{$li.money}>元
 						</td>
 						<td>
-							<?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M
+							<{$li.llpackage}>M&nbsp;|&nbsp;超出部分<{$li.llmore}>元/M
 						</td>
 						<td>
-							<?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟
+							<{$li.callpackage}>分钟&nbsp;|&nbsp;超出部分<{$li.callmore}>元/分钟
 						</td>
 						<td>
-							<?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条
+							<{$li.msgpackage}>条&nbsp;|&nbsp;超出部分<{$li.msgmore}>元/条
 						</td>
 						<td>
-							<span style="color:#f40;"><?php echo ($li["money2"]); ?></span>元
+							<span style="color:#f40;"><{$li.money2}></span>元
 						</td>
-					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+					</tr>
+					</volist>
 				</tbody>
 			</table>
 					

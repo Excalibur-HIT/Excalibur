@@ -15,7 +15,7 @@
 	<link href="/Css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
 	<link href="/Css/bootstrap-social.css" rel="stylesheet" type="text/css">	
 	<script src="/Js/jquery-1.7.2.js"></script>
-	<!--script>
+	<script>
 	function fleshVerify(type){ 
 		//重载验证码
 		var timenow = new Date().getTime();
@@ -25,8 +25,7 @@
 			$('#verifyImg').attr("src", '__URL__/verify/'+timenow);
 		}
 	}
-    </script> 
-	-->
+    </script>
 </head>
 <body class="templatemo-bg-image-2">
 	<div class="container">
@@ -92,9 +91,10 @@
 					<div class="form-group">
 			          <div class="col-md-12">
 			            <a href="href="<?php echo U('/index/login');?>"" class="pull-left">Home</a>
-						<a href="href="<?php echo U('/index/login');?>"" class="pull-right">Login</a>
+						<a href="/index.php/index/login" class="pull-right">Login</a>
 			          </div>
-			        </div>				
+			        </div>
+					
 				</div>				    	
 		      </form>		      
 		</div>

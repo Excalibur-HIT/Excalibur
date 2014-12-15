@@ -18,14 +18,18 @@
 
 <style type="text/css">
 </style>
-</head><body class="templatemo-bg-image-2">
+<body class="templatemo-bg-image-2">
 
 
 	<div class="container">
 		<div class="col-md-12">			
-			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
+			<form class="form-horizontal templatemo-login-form-2" name="huafei" action="<?php echo U('member/person/addtc');?>" method="post" >
 				<div class="row">
 		<div class="col-md-12">
+			<div class="col-md-12">
+						<h1 style="font-family:'微软雅黑';"align="center">管理套餐</h1>
+						<h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;"align="center">查看/删除</h4>
+					</div>
 			<div class="tabbable" id="tabs-462262">
 			<div class="tabbable" id="tabs-462262">
 				<ul class="nav nav-tabs">
@@ -40,27 +44,13 @@
             <table class="table">
 				<thead>
 					<tr>
-						<th>
-							运营商
-						</th>
-						<th>
-							套餐名称
-						</th>
-						<th>
-							套餐价格
-						</th>
-						<th>
-							流量价格
-						</th>
-						<th>
-							通话价格
-						</th>
-						<th>
-							短讯价格
-						</th>
-						<th>
-							删除
-						</th>
+						<th>运营商</th>
+						<th>套餐名称</th>
+						<th>套餐价格</th>
+						<th>流量价格</th>
+						<th>通话价格</th>
+						<th>短讯价格</th>
+						<th>删除</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -98,26 +88,34 @@
 				<br/>
 				
 				
-		<form class="form-signin" name="huafei" action="<?php echo U('member/person/addtc');?>" method="post" style="max-width: 450px;">
-        <h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;">添加套餐</h4>
-		  <div class="mb20">运&nbsp;&nbsp;营&nbsp;&nbsp;商:&nbsp;&nbsp;<select name="yys">
-        		<option value="移动">移动</option>
-				<option value="联通">联通</option>
-				<option value="电信">电信</option>
-		 </select>
-		 </div>
-		 <div class="mb20">套餐名称:&nbsp;&nbsp;<input type="text" class="form"  name="package"  ></div>
-		 <div class="mb20">套餐价格:&nbsp;&nbsp;<input type="text" class="form"  name="money"  ></div>
-          <div class="mb20">所含时长/m:&nbsp;&nbsp;<input type="text" class="form"  name="callpackage"  ></div>
-		  <div class="mb20">通话超出价格:&nbsp;&nbsp;<input type="text" class="form"  name="callmore"  ></div>
-          <div class="mb20">所含流量/m:&nbsp;&nbsp;<input type="text" class="form" name="llpackage"></div>
-		  <div class="mb20">流量超出价格:&nbsp;&nbsp;<input type="text" class="form" name="llmore"></div>
-          <div class="mb20">所含短信/条:&nbsp;&nbsp;<input type="text" class="form" name="msgpackage"></div>
-		   <div class="mb20">短信超出价格:&nbsp;&nbsp;<input type="text" class="form" name="msgmore"></div>
-
-
-          <div style="text-align:center;margin-top:20px;"><button class="btn" type="submit">添加套餐</button></div>
-      </form>	      		      
+        <h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;"align="center">添加</h4>
+				运&nbsp;&nbsp;营&nbsp;&nbsp;商:&nbsp;&nbsp;
+				<input type="radio" value="移动" checked="checked" name="yys"/>移动
+				<input type="radio" value="联通" name="yys"/>联通
+				<input type="radio" value="移动" name="yys"/>移动
+		 <br/>
+		 <br/>
+			<div class="row">
+					<div class="templatemo-one-signin col-md-6">
+						<input type="text" class="form-control" name="package" placeholder="套餐名称"><br/>
+						<input type="text" class="form-control" name="money" placeholder="套餐价格"><br/>
+						<input type="text" class="form-control" name="callpackage" placeholder="所含时长/m"><br/>
+						<input type="text" class="form-control" name="callmore" placeholder="通话超出价格"><br/>
+					</div>
+					<div class="templatemo-other-signin col-md-6">
+						<input type="text" class="form-control" name="llpackage" placeholder="所含流量/m"><br/>
+						<input type="text" class="form-control" name="llmore" placeholder="流量超出价格"><br/>
+						<input type="text" class="form-control" name="msgpackage" placeholder="所含短信/条"><br/>
+						<input type="text" class="form-control" name="msgmore" placeholder="短信超出价格"><br/>
+					</div> 
+				</div> 
+          <div style="text-align:center;margin-top:20px;"><button class="btn btn-info" type="submit">添加套餐</button></div>
+      </form>	  
+		<div class="form-group">
+			          <div class="col-md-12">
+			            <a href="/index.php/index" class="pull-left">Home</a>
+			          </div>
+			        </div>
 		</div>
 	</div>
 

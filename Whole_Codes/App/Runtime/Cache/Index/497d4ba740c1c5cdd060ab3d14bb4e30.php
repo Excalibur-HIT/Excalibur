@@ -41,9 +41,15 @@ function fleshVerify(type){
 			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('Login/checkLogin');?>" method="post">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 style="font-family:'';">管理员登陆</h1>
+						<h1 style="font-family:'黑体';">管理员登陆</h1>
 					</div>
 				</div>
+				<div class="form-group">
+			          <div class="col-md-12">
+			            <a href="/index.php" class="pull-left">返回主页</a>
+						<a href="/index.php/index/login/checkreg.html" class="pull-right">注册</a>
+			          </div>
+			        </div>
 				<div class="form-inner">		
 			        <div class="form-group">
 			          <div class="col-md-12">		          	
@@ -67,23 +73,11 @@ function fleshVerify(type){
 					<br/>
 					<div class="form-group">
 				          <div class="col-md-12">
-				            <input type="submit" value="登陆" class="btn btn-info">
+				            <input type="submit" value="登陆" class="btn myButton">
 				          </div>
 				    </div>
-					<div class="form-group">
-			          <div class="col-md-12">
-			            <a href="href="<?php echo U('/index/login');?>"" class="pull-left">Home</a>
-			          </div>
-			        </div>
-					<!-- 验证码保留部分
-					<div class="form-group">
-			          <div class="col-md-6">
-						<label for="password" class="control-label">Identifying Code</label>
-			            <input type="text" class="form-control" name="code" placeholder="" />
-						<img id="verifyImg" SRC="<?php echo U('Login/verify');?>" onClick="fleshVerify(this)" border="0" alt="点击刷新验证码" style="cursor:pointer;width:80px;vertical-align:top;" align="absmiddle">
-			          </div>
-			        </div>
-					-->				
+					
+							
 				</div>
 			</form>
 		</div>

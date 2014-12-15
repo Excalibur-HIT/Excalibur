@@ -23,11 +23,11 @@
 			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-md-12">
-						<h1><span style="color:#ffffff;font-family:'黑体';">您的话费分析如下</span></h1>
+						<h1><span style="color:#ffffff;font-family:'黑体';">话费分析结果</span></h1>
 					</div>
 				</div>
 				<div class="row">
-					<h2><span style="color:#ffffff;">您总共通话<span style="color:#f40;"><?php echo ($call); ?></span><span style="color:#ffffff;">分钟，使用<span style="color:#f40;"><?php echo ($ll); ?></span><span style="color:#ffffff;">M流量，发送了<span style="color:#f40;"><?php echo ($msg); ?></span><span style="color:#ffffff;">条短信<br></h2>
+					<h2><span style="color:#ffffff;">您总共通话<span style="color:#1f2f47;"><?php echo ($call); ?></span><span style="color:#ffffff;">分钟，使用<span style="color:#1f2f47;"><?php echo ($ll); ?></span><span style="color:#ffffff;">M流量，发送了<span style="color:#1f2f47;"><?php echo ($msg); ?></span><span style="color:#ffffff;">条短信<br></h2>
 					<br/>
 					<h2><span style="color:#ffffff;">套餐按价格排序如下：</h2>
 					<div class="col-md-12">
@@ -42,6 +42,7 @@
 								<li>
 									<a href="#panel-115175" data-toggle="tab">电信</a>
 								</li>
+								<a href="/index.php" class="pull-right">返回主页</a>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="panel-963344" style="padding: 5px;">
@@ -53,7 +54,9 @@
 												<th>套餐价格</th>
 												<th>流量价格</th>
 												<th>通话价格</th>
-												<th>短讯价格</th>
+												<th>短讯价格</th>		
+												<th>流量包</th>
+												<th>短信包</th>
 												<th>实际花费</th>
 											</tr>
 										</thead>
@@ -65,7 +68,9 @@
 													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
 													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
 													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
-													<td><span style="color:#f40;"><?php echo ($li["money2"]); ?></span>元</td>
+													<td><?php echo ($li["llb"]); ?>元<?php echo ($li["llbll"]); ?>M</td>  
+													<td><?php echo ($li["dxb"]); ?>元<?php echo ($li["dxbdx"]); ?>条</td>
+													<td><span style="color:#1f2f47;"><?php echo ($li["money2"]); ?></span>元</td>
 												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>
@@ -80,6 +85,8 @@
 												<th>流量价格</th>
 												<th>通话价格</th>
 												<th>短讯价格</th>
+												<th>流量包</th>
+												<th>短信包</th>
 												<th>实际花费</th>
 											</tr>
 										</thead>
@@ -91,7 +98,9 @@
 													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
 													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
 													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
-													<td><span style="color:#f40;"><?php echo ($li["money5"]); ?></span>元</td>
+													<td><?php echo ($li["llb"]); ?>元<?php echo ($li["llbll"]); ?>M</td>  
+													<td><?php echo ($li["dxb"]); ?>元<?php echo ($li["dxbdx"]); ?>条</td>
+													<td><span style="color:#1f2f47;"><?php echo ($li["money5"]); ?></span>元</td>
 												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>
@@ -106,6 +115,8 @@
 												<th>流量价格</th>
 												<th>通话价格</th>
 												<th>短讯价格</th>
+												<th>流量包</th>
+												<th>短信包</th>
 												<th>实际花费</th>
 											</tr>
 										</thead>
@@ -117,7 +128,9 @@
 													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
 													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
 													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
-													<td><span style="color:#f40;"><?php echo ($li["money4"]); ?></span>元</td>
+													<td><?php echo ($li["llb"]); ?>元<?php echo ($li["llbll"]); ?>M</td>  
+													<td><?php echo ($li["dxb"]); ?>元<?php echo ($li["dxbdx"]); ?>条</td>
+													<td><span style="color:#1f2f47;"><?php echo ($li["money3"]); ?></span>元</td>
 												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>

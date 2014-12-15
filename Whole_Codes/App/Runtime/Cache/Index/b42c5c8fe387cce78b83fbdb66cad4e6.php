@@ -23,18 +23,21 @@
 			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-md-12">
-						<h1><span style="color:#ffffff;">您的话费分析如下</span></h1>
+						<h1><span style="color:#ffffff;font-family:'黑体';">话费分析结果</span></h1>
 					</div>
 				</div>
 				<div class="row">
-						账单详情：月租费用为<span style="color:#f40;"><?php echo ($base_cost); ?></span>元， 语音通话
-费用为<span style="color:#f40;"><?php echo ($call_cost); ?></span>元，短信费用为
-<span style="color:#f40;"><?php echo ($msg_cost); ?></span>元<br>
-账单分析：总费用中，月租占<span style="color:#f40;"><?php echo ($base_percent); ?></span>%,
-通话费用占<span style="color:#f40;"><?php echo ($call_percent); ?></span>%，短信费用占
-<span style="color:#f40;"><?php echo ($msg_percent); ?></span>元<br>
+					<div class="text-center">
+						账单详情：语音通话为<span style="color:#1f2f47;"><?php echo ($call); ?></span>分钟，流量使用为<span style="color:#1f2f47;"><?php echo ($ll); ?></span>M,短信发送为<span style="color:#1f2f47;"><?php echo ($msg); ?></span>条<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						月租费用为<span style="color:#1f2f47;"><?php echo ($base_cost); ?></span>元， 语音通话
+费用为<span style="color:#1f2f47;"><?php echo ($call_cost); ?></span>元，短信费用为
+<span style="color:#1f2f47;"><?php echo ($msg_cost); ?></span>元.<br>
+账单分析：总费用中，月租占<span style="color:#1f2f47;"><?php echo ($base_percent); ?></span>%,
+通话费用占<span style="color:#1f2f47;"><?php echo ($call_percent); ?></span>%，短信费用占
+<span style="color:#1f2f47;"><?php echo ($msg_percent); ?></span>%.<br>
+					</div>
 					<br/>
-					<h2><span style="color:#ffffff;">套餐按价格排序如下：</h2>
+					<h2><span style="color:#ffffff;font-family:'黑体';">套餐按价格排序如下：</h2>
 					<div class="col-md-12">
 						<div class="tabbable" id="tabs-462262">
 							<ul class="nav nav-tabs">
@@ -47,6 +50,7 @@
 								<li>
 									<a href="#panel-115175" data-toggle="tab">电信</a>
 								</li>
+								<a href="/index.php" class="pull-right">返回主页</a>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="panel-963344" style="padding: 5px;">
@@ -70,7 +74,7 @@
 													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
 													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
 													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
-													<td><span style="color:#f40;"><?php echo ($li["money2"]); ?></span>元</td>
+													<td><span style="color:#1f2f47;"><?php echo ($li["money2"]); ?></span>元</td>
 												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>
@@ -96,7 +100,7 @@
 													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
 													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
 													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
-													<td><span style="color:#f40;"><?php echo ($li["money5"]); ?></span>元</td>
+													<td><span style="color:#1f2f47;"><?php echo ($li["money5"]); ?></span>元</td>
 												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>
@@ -122,7 +126,7 @@
 													<td><?php echo ($li["llpackage"]); ?>M&nbsp;|&nbsp;超出部分<?php echo ($li["llmore"]); ?>元/M</td>
 													<td><?php echo ($li["callpackage"]); ?>分钟&nbsp;|&nbsp;超出部分<?php echo ($li["callmore"]); ?>元/分钟</td>
 													<td><?php echo ($li["msgpackage"]); ?>条&nbsp;|&nbsp;超出部分<?php echo ($li["msgmore"]); ?>元/条</td>
-													<td><span style="color:#f40;"><?php echo ($li["money4"]); ?></span>元</td>
+													<td><span style="color:#1f2f47;"><?php echo ($li["money3"]); ?></span>元</td>
 												</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 										</tbody>
 									</table>

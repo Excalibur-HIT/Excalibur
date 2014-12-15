@@ -41,13 +41,19 @@ function fleshVerify(type){
 			<form class="form-horizontal templatemo-login-form-2" role="form" action="<{:U('Login/checkLogin')}>" method="post">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 style="font-family:'';">管理员登陆</h1>
+						<h1 style="font-family:'黑体';">管理员登陆</h1>
 					</div>
 				</div>
+				<div class="form-group">
+			          <div class="col-md-12">
+			            <a href="/index.php" class="pull-left" style="font-family:'黑体';" >点此返回主页</a>
+						<a href="/index.php/index/login/checkreg.html" class="pull-right" style="font-family:'黑体';" >注册</a>
+			          </div>
+			        </div>
 				<div class="form-inner">		
 			        <div class="form-group">
 			          <div class="col-md-12">		          	
-			            <label for="username" class="control-label">用户名</label>
+			            <label for="username" class="control-label" style="font-family:'黑体';" >用户名</label>
 						<div class="templatemo-input-icon-container">
 				            <i class="fa fa-user"></i>
 				            <input type="text" class="form-control" name="username" placeholder="" required>
@@ -57,7 +63,7 @@ function fleshVerify(type){
 			        </div>
 			        <div class="form-group">
 			          <div class="col-md-12">
-			            <label for="password" class="control-label">密码</label>
+			            <label for="password" class="control-label" style="font-family:'黑体';" >密码</label>
 						<div class="templatemo-input-icon-container">
 				            <i class="fa fa-lock"></i>
 							<input type="password" class="form-control" name="password" placeholder="" required>
@@ -67,23 +73,11 @@ function fleshVerify(type){
 					<br/>
 					<div class="form-group">
 				          <div class="col-md-12">
-				            <input type="submit" value="登陆" class="btn btn-info">
+				            <input type="submit" value="登陆" class="btn myButton" style="font-family:'黑体';" >
 				          </div>
 				    </div>
-					<div class="form-group">
-			          <div class="col-md-12">
-			            <a href="href="<{:U('/index/login')}>"" class="pull-left">Home</a>
-			          </div>
-			        </div>
-					<!-- 验证码保留部分
-					<div class="form-group">
-			          <div class="col-md-6">
-						<label for="password" class="control-label">Identifying Code</label>
-			            <input type="text" class="form-control" name="code" placeholder="" />
-						<img id="verifyImg" SRC="<{:U('Login/verify')}>" onClick="fleshVerify(this)" border="0" alt="点击刷新验证码" style="cursor:pointer;width:80px;vertical-align:top;" align="absmiddle">
-			          </div>
-			        </div>
-					-->				
+					
+							
 				</div>
 			</form>
 		</div>

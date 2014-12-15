@@ -27,16 +27,43 @@
 				<div class="row">
 		<div class="col-md-12">
 			<div class="col-md-12">
-						<h1 style="font-family:'微软雅黑';"align="center">管理套餐</h1>
-						<h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;"align="center">查看/删除</h4>
+				<h1 style="font-family:'黑体';" align="center">管理套餐</h1>
+						
+						
+				 <h4  class="mb20"style="font-family:'黑体';font-size:20px;"align="center">添加</h4>
+				运&nbsp;&nbsp;营&nbsp;&nbsp;商:&nbsp;&nbsp;
+				<input type="radio" value="移动" checked="checked" name="yys"/>移动
+				<input type="radio" value="联通" name="yys"/>联通
+				<input type="radio" value="移动" name="yys"/>移动  
+				<a href="/index.php" class="pull-right" style="font-family:'黑体';" >点此返回主页</a>
+		 <br/>
+		 <br/>
+			<div class="row">
+					<div class="templatemo-one-signin col-md-6">
+						<input type="text" class="form-control" name="package" placeholder="套餐名称"><br/>
+						<input type="text" class="form-control" name="money" placeholder="套餐价格"><br/>
+						<input type="text" class="form-control" name="callpackage" placeholder="所含时长/m"><br/>
+						<input type="text" class="form-control" name="callmore" placeholder="通话超出价格"><br/>
+					</div>
+					<div class="templatemo-other-signin col-md-6">
+						<input type="text" class="form-control" name="llpackage" placeholder="所含流量/m"><br/>
+						<input type="text" class="form-control" name="llmore" placeholder="流量超出价格"><br/>
+						<input type="text" class="form-control" name="msgpackage" placeholder="所含短信/条"><br/>
+						<input type="text" class="form-control" name="msgmore" placeholder="短信超出价格"><br/>
+					</div> 
+				</div> 
+          <div style="text-align:center;margin-top:20px;"><button class="btn myButton" type="submit">添加套餐</button></div>
+      </form>
+	  
+	<br><br>	<h4  class="mb20"style="font-family:'黑体';font-size:20px;"align="center">管理已有套餐</h4>
 					</div>
 			<div class="tabbable" id="tabs-462262">
 			<div class="tabbable" id="tabs-462262">
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a href="#panel-963344" data-toggle="tab">所有套餐</a>
+						<a href="#panel-963344" data-toggle="tab" style="font-family:'黑体';" >所有套餐</a>
 					</li>
-					
+
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active" id="panel-963344" style="padding: 5px;">
@@ -88,34 +115,8 @@
 				<br/>
 				
 				
-        <h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;"align="center">添加</h4>
-				运&nbsp;&nbsp;营&nbsp;&nbsp;商:&nbsp;&nbsp;
-				<input type="radio" value="移动" checked="checked" name="yys"/>移动
-				<input type="radio" value="联通" name="yys"/>联通
-				<input type="radio" value="移动" name="yys"/>移动
-		 <br/>
-		 <br/>
-			<div class="row">
-					<div class="templatemo-one-signin col-md-6">
-						<input type="text" class="form-control" name="package" placeholder="套餐名称"><br/>
-						<input type="text" class="form-control" name="money" placeholder="套餐价格"><br/>
-						<input type="text" class="form-control" name="callpackage" placeholder="所含时长/m"><br/>
-						<input type="text" class="form-control" name="callmore" placeholder="通话超出价格"><br/>
-					</div>
-					<div class="templatemo-other-signin col-md-6">
-						<input type="text" class="form-control" name="llpackage" placeholder="所含流量/m"><br/>
-						<input type="text" class="form-control" name="llmore" placeholder="流量超出价格"><br/>
-						<input type="text" class="form-control" name="msgpackage" placeholder="所含短信/条"><br/>
-						<input type="text" class="form-control" name="msgmore" placeholder="短信超出价格"><br/>
-					</div> 
-				</div> 
-          <div style="text-align:center;margin-top:20px;"><button class="btn btn-info" type="submit">添加套餐</button></div>
-      </form>	  
-		<div class="form-group">
-			          <div class="col-md-12">
-			            <a href="/index.php/index" class="pull-left">Home</a>
-			          </div>
-			        </div>
+	  
+		
 		</div>
 	</div>
 

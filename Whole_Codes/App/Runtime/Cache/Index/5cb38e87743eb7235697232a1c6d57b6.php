@@ -33,14 +33,19 @@
 			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('Login/checkregs');?>" method="post">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 style="font-family:'';">创建管理员账户</h1>
+						<h1 style="font-family:'黑体';">创建管理员账户</h1>
 					</div>
 				</div>
-				<br/>
+				<div class="form-group">
+			          <div class="col-md-12">
+			            <a style="font-family:'黑体';" href="href="<?php echo U('/index/login');?>"" class="pull-left" >点此返回主页</a>
+						<a href="/index.php/index/login" class="pull-right" style="font-family:'黑体';">登陆</a>
+			          </div>
+			        </div>
 				<div class="form-inner">		
 			        <div class="form-group">
 			          <div class="col-md-6">		          	
-			            <label for="username" class="control-label">用户名</label>
+			            <label for="username" class="control-label" style="font-family:'黑体';">用户名</label>
 						<div class="templatemo-input-icon-container">
 				            <i class="fa fa-user"></i>
 				            <input type="text" class="form-control" name="username" placeholder="">
@@ -48,7 +53,7 @@
 						           		            		            
 			          </div>      
 					  <div class="col-md-6">
-							<label for="password" class="control-label">管理员许可码</label>
+							<label for="password" class="control-label" style="font-family:'黑体';">管理员许可码</label>
 							<div class="templatemo-input-icon-container">
 				            	<i class="fa fa-info-circle"></i>
 								<input type="text" class="form-control" name="code" placeholder="" />
@@ -57,43 +62,29 @@
 			        </div>
 			        <div class="form-group">
 			          <div class="col-md-6">
-			            <label for="password" class="control-label">密码</label>
+			            <label for="password" class="control-label" style="font-family:'黑体';">密码</label>
 						<div class="templatemo-input-icon-container">
 				            <i class="fa fa-lock"></i>
 							<input type="password" class="form-control" name="password" placeholder="">
 						</div>
 			          </div>
 			          <div class="col-md-6">
-			            <label for="password" class="control-label">确认密码</label>
+			            <label for="password" class="control-label" style="font-family:'黑体';">确认密码</label>
 			            <div class="templatemo-input-icon-container">
 				            <i class="fa fa-lock"></i>
 							<input type="password" class="form-control" name="repassword" placeholder="">
 						</div>
 			          </div>
 			        </div>
-					<!-- 验证码部分的保留
-					<div class="form-group">
-			          <div class="col-md-6">
-						<label for="password" class="control-label">Identifying Code</label>
-			            <input type="text" class="form-control" name="code" placeholder="" />
-						<img id="verifyImg" SRC="<?php echo U('Login/verify');?>" onClick="fleshVerify(this)" border="0" alt="点击刷新验证码" style="cursor:pointer;width:80px;vertical-align:top;" align="absmiddle">
-			          </div>
-			        </div>
-					-->
 			    </div>
 				<br/>
 				<br/>
 			        <div class="form-group">
 			          <div class="col-md-12">
-			            <input type="submit" value="创建账户" class="btn btn-info">
+			            <input type="submit" value="创建账户" class="btn myButton" style="font-family:'黑体';" >
 			          </div>
 			        </div>	
-					<div class="form-group">
-			          <div class="col-md-12">
-			            <a href="href="<?php echo U('/index/login');?>"" class="pull-left">Home</a>
-						<a href="/index.php/index/login" class="pull-right">Login</a>
-			          </div>
-			        </div>
+					
 					
 				</div>				    	
 		      </form>		      

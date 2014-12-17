@@ -15,6 +15,7 @@
 <link href="/Css/bootstrap-social.css" rel="stylesheet" type="text/css">	
 <script src="/Js/jquery.js"></script>
 <script src="/Js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 <script>
 function fclick(obj){
   with(obj){
@@ -26,10 +27,14 @@ function fclick(obj){
   }
 }
 </script>
+=======
+
+>>>>>>> master
 <style type="text/css">
 input{ solid #333333;color:#eeeeee;font:normal 12px Tahoma;height:30px}
 </style>
 </head><body class="templatemo-bg-image-2">
+<<<<<<< HEAD
 
 <br/><br/><br/>
 	<div class="container">
@@ -47,12 +52,33 @@ input{ solid #333333;color:#eeeeee;font:normal 12px Tahoma;height:30px}
 					<a href="/index.php/member" style="color:#ffffff;font-family:'黑体';" >管理套餐</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</span> <span class="navspan"><a href="/index.php/index/login/doLogout" style="color:#ffffff;font-family:'黑体';" >退出</a></span><?php endif; ?>&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="/index.php/index/login/checkreg.html" style="color:#ffffff;font-family:'黑体';" class="pull-right">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+=======
+
+
+	<div class="container">
+		<div class="col-md-12">			
+			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Search For The Best Service</h1>
+					</div>
+					<div class="form-group">
+			          <div class="col-md-12">
+					  <?php if($_SESSION[C('USER_AUTH_KEY_F')] == ''): ?><a href="/index.php/index/login">管理员登陆</a>
+					<?php else: ?>
+					<span class="navspan">hello,<?php echo $_SESSION[C('USER_AUTH_KEY_F')];?></span><span class="navspan">&nbsp;
+					<a href="/index.php/member">管理已有套餐</a>&nbsp;
+					</span> <span class="navspan"><a href="/index.php/index/login/doLogout">退出登录</a></span><?php endif; ?>
+			            
+						<a href="/index.php/index/login/checkreg.html" class="pull-right">管理员注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+>>>>>>> master
 			          </div>
 			        </div>
 				</div>
 				<br/>
 				<div class="row">
 					<div class="templatemo-one-signin col-md-6">
+<<<<<<< HEAD
 					<form  role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
 						<p class="text-center" style="font-family:'黑体'; font-size:20px;">通过输入使用需求查询</p>
 						<div class="templatemo-input-icon-container">
@@ -75,6 +101,50 @@ input{ solid #333333;color:#eeeeee;font:normal 12px Tahoma;height:30px}
 					</form>	
 					</div>	
 						
+=======
+						<br/>
+						<div class="templatemo-input-icon-container">
+				            <i class="fa fa-phone"></i>
+							<input type="text" class="form-control" name="call" placeholder="通话时长">
+						</div>
+						<br/>
+						<div class="templatemo-input-icon-container">
+				            <i class="fa fa-envelope"></i>
+							<input type="text" class="form-control" name="ll" placeholder="短信数量">
+						</div>
+						<br/>
+						<div class="templatemo-input-icon-container">
+				            <i class="fa fa-globe"></i>
+							<input type="text" class="form-control" name="msg" placeholder="使用流量">
+						</div>
+						<br/>
+					</div>
+					<button class="btn btn-info" type="submit">查询最优套餐</button>	
+					</form>		
+					
+				<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun2');?>" method="post" enctype="multipart/form-data">
+					<div class="templatemo-other-signin col-md-6">
+						<p  class="mb20"style="font-family:'微软雅黑';font-size:20px;">通过提交账单表格查询</p>
+						<a href="http://www.10086.cn/" target="_blank">移动营业厅直通车</a><br>
+						<a href="http://www.10010.com/" target="_blank">联通营业厅直通车</a><br>
+						<a href="http://www.189.cn/" target="_blank">电信营业厅直通车</a><br><br>
+						<div class="mb20" style="text-align:center;"><input  type="file" name="file_stu"  class="btn btn-info"/></div>
+					</div> 	<br/>
+				<br><button class="btn btn-info" type="submit">查询最优套餐</button> 
+		      </form>		
+					<div class="col-md-12">
+					<div class="tabbable" id="tabs-462262">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#panel-963344" data-toggle="tab">移动</a>
+					</li> 
+					<li>
+						<a href="#panel-115174" data-toggle="tab">联通</a>
+					</li>
+					<li>
+						<a href="#panel-115175" data-toggle="tab">电信</a>
+					</li>
+>>>>>>> master
 					
 				
 					<div class="templatemo-other-signin col-md-6">
@@ -280,11 +350,21 @@ input{ solid #333333;color:#eeeeee;font:normal 12px Tahoma;height:30px}
 			</div>
 			</div>
 				</div>	
+<<<<<<< HEAD
       		 </div>     
+=======
+      		      
+>>>>>>> master
 		</div>
 	</div>
 
 
+<<<<<<< HEAD
 --> 
+=======
+<!-- footer start -->
+<!-- footer end -->
+<!-- 去顶部 --> 
+>>>>>>> master
 </body>
 </html>

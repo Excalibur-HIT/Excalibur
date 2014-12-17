@@ -9208,6 +9208,7 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.001184s ]
 INFO: [ view_end ] --END-- [ RunTime:0.001319s ]
 
+<<<<<<< HEAD
 [ 2014-12-10T16:53:34+08:00 ] 127.0.0.1 /
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013515s ]
@@ -15055,3 +15056,5 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.000578s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000699s ]
 
+=======
+>>>>>>> master

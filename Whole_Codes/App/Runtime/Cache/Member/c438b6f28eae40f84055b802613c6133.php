@@ -18,11 +18,16 @@
 
 <style type="text/css">
 </style>
+<<<<<<< HEAD
 <body class="templatemo-bg-image-2">
+=======
+</head><body class="templatemo-bg-image-2">
+>>>>>>> master
 
 
 	<div class="container">
 		<div class="col-md-12">			
+<<<<<<< HEAD
 			<form class="form-horizontal templatemo-login-form-2" name="huafei" action="<?php echo U('member/person/addtc');?>" method="post" >
 				<div class="row">
 		<div class="col-md-12">
@@ -57,6 +62,11 @@
 	  
 	<br><br>	<h4  class="mb20"style="font-family:'黑体';font-size:20px;"align="center">管理已有套餐</h4>
 					</div>
+=======
+			<form class="form-horizontal templatemo-login-form-2" role="form" action="<?php echo U('index/index/chaxun');?>" method="post" enctype="multipart/form-data">
+				<div class="row">
+		<div class="col-md-12">
+>>>>>>> master
 			<div class="tabbable" id="tabs-462262">
 			<div class="tabbable" id="tabs-462262">
 				<ul class="nav nav-tabs">
@@ -115,8 +125,31 @@
 				<br/>
 				
 				
+<<<<<<< HEAD
 	  
 		
+=======
+		<form class="form-signin" name="huafei" action="<?php echo U('member/person/addtc');?>" method="post" style="max-width: 450px;">
+        <h4  class="mb20"style="font-family:'微软雅黑';font-size:20px;">添加套餐</h4>
+		  <div class="mb20">运&nbsp;&nbsp;营&nbsp;&nbsp;商:&nbsp;&nbsp;<select name="yys">
+        		<option value="移动">移动</option>
+				<option value="联通">联通</option>
+				<option value="电信">电信</option>
+		 </select>
+		 </div>
+		 <div class="mb20">套餐名称:&nbsp;&nbsp;<input type="text" class="form"  name="package"  ></div>
+		 <div class="mb20">套餐价格:&nbsp;&nbsp;<input type="text" class="form"  name="money"  ></div>
+          <div class="mb20">所含时长/m:&nbsp;&nbsp;<input type="text" class="form"  name="callpackage"  ></div>
+		  <div class="mb20">通话超出价格:&nbsp;&nbsp;<input type="text" class="form"  name="callmore"  ></div>
+          <div class="mb20">所含流量/m:&nbsp;&nbsp;<input type="text" class="form" name="llpackage"></div>
+		  <div class="mb20">流量超出价格:&nbsp;&nbsp;<input type="text" class="form" name="llmore"></div>
+          <div class="mb20">所含短信/条:&nbsp;&nbsp;<input type="text" class="form" name="msgpackage"></div>
+		   <div class="mb20">短信超出价格:&nbsp;&nbsp;<input type="text" class="form" name="msgmore"></div>
+
+
+          <div style="text-align:center;margin-top:20px;"><button class="btn" type="submit">添加套餐</button></div>
+      </form>	      		      
+>>>>>>> master
 		</div>
 	</div>
 

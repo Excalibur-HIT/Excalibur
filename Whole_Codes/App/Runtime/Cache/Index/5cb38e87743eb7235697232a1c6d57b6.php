@@ -84,7 +84,16 @@
 			            <input type="submit" value="创建账户" class="btn myButton" style="font-family:'黑体';" >
 			          </div>
 			        </div>	
+<<<<<<< HEAD
 					
+=======
+					<div class="form-group">
+			          <div class="col-md-12">
+			            <a href="href="<?php echo U('/index/login');?>"" class="pull-left">Home</a>
+						<a href="/index.php/index/login" class="pull-right">Login</a>
+			          </div>
+			        </div>
+>>>>>>> master
 					
 				</div>				    	
 		      </form>		      
